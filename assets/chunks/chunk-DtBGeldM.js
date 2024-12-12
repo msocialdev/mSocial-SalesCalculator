@@ -331,7 +331,8 @@ Error generating stack: `+n.message+`
     document.querySelector("#make-payment-btn").onclick = () => {
       if(clientID)
       {
-        
+        var url = "https://portal.msocialverse.com/stripepay/redirect?email=" + btoa(email);
+        window.open(url);
       }
       else
       {
